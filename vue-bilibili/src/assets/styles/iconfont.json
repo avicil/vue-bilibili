@@ -1,0 +1,58 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "58524912",
+      "name": "bilibili-line",
+      "font_class": "bilibili-line",
+      "unicode": "eeac",
+      "unicode_decimal": 61100
+    },
+    {
+      "icon_id": "58524929",
+      "name": "哔哩哔哩_彩",
+      "font_class": "bilibili_cai",
+      "unicode": "e6c6",
+      "unicode_decimal": 59078
+    },
+    {
+      "icon_id": "59064367",
+      "name": "视频",
+      "font_class": "shipin",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "59064368",
+      "name": "Tab_动态（选中）",
+      "font_class": "dongtaixuanzhong",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "59064369",
+      "name": "主页",
+      "font_class": "zhuye",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "59064370",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e870",
+      "unicode_decimal": 59504
+    },
+    {
+      "icon_id": "59064371",
+      "name": "电视、TV",
+      "font_class": "dianshiTV",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    }
+  ]
+}

@@ -12,7 +12,7 @@
                             </a>
                         </span>
                         <el-dropdown-menu slot="dropdown" class="channel-menu-mini">
-                            <Header-SVG></Header-SVG>
+                            <Header-Svgicon></Header-Svgicon>
                         </el-dropdown-menu>
                     </el-dropdown>
                 </li>
@@ -185,11 +185,11 @@
   </div>
 </template>
 <script>
-import HeaderSVG from './SVG'
+import HeaderSvgicon from './Svgicon'
 export default {
     name: 'Header',
     components:{
-        HeaderSVG
+        HeaderSvgicon
     },
     data () {
         return {

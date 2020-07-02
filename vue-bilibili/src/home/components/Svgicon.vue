@@ -150,7 +150,7 @@
 
 <script>
 export default {
-    name:"SVG"
+    name:"Svgicon"
 }
 </script>
 
