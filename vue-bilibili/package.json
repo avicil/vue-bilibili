@@ -10,7 +10,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "awesome": "0.0.7",
     "element-ui": "^2.13.2",
+    "font-awesome": "^4.7.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

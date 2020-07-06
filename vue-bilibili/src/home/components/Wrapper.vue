@@ -34,29 +34,26 @@
           <div class="wrappers">
               <div class="n-inner">
                   <div class="n-tab-links">
-                    <a href="/488524310" class="n-btn n-index n-fans n-404 router-link-exact-active router-link-active active">
+                    <router-link to="/homepage" tag="a" class="n-btn">
                         <i class="iconfont" style="color:#00c091;font-size:17px">&#xe61b;</i>
                         <span class="n-text">主页</span>
-                    </a>
-                    <a href="/488524310/dynamic" class="n-btn">
-                        <i class="iconfont" style="color:#fb7299;font-size:17px">&#xe662;</i>
-                        <span class="n-text">动态</span>
-                    </a>
-                    <a href="/488524310/video" class="n-btn">
+                    </router-link>
+                    <router-link to="/dynamic" tag="a" class="n-btn">
+                        <i class="iconfont" style="color:#fb7299;font-size:18px">&#xe662;</i>
+                        <span class="n-text">动态</span></router-link>
+                    <router-link to="/contribution" tag="a" class="n-btn">
                         <i class="iconfont" style="color:#02b5da;font-size:20px">&#xe615;</i>
                         <span class="n-text">投稿</span>
-                        <span class="n-num">24</span>
-                    </a>
-                    <a href="/488524310/channel/index" class="n-btn">
+                        <span class="n-num">24</span></router-link>
+                    <router-link to="/channel" tag="a" class="n-btn">
                         <i class="iconfont" style="color:#23c9ed;font-size:17px">&#xe607;</i>
                         <span class="n-text">频道</span>
                         <span class="n-num">1</span>
-                    </a>
-                    <a href="/488524310/favlist" class="n-btn">
-                        <i class="iconfont" style="color:#f3a034;font-size:22px">&#xe870;</i>
+                    </router-link>
+                    <router-link to="/collection" tag="a" class="n-btn"> <i class="iconfont" style="color:#f3a034;font-size:22px">&#xe870;</i>
                         <span class="n-text">收藏</span>
                         <span class="n-num">3</span>
-                    </a>
+                    </router-link>
                   </div>
                   <div class="g-search">
                       <input type="text" placeholder="搜索视频" class="space_input">
@@ -77,7 +74,7 @@
                     </div>
                   </div>
               </div>
-              <div class="n-cursor" style="width: 50px; left: 25px;"></div>
+              <div class="n-cursor active"></div><!-- //蓝色导航栏下划线 -->
           </div>
       </div>
       <div class="clearfix">
@@ -94,9 +91,7 @@ export default {
         }
     },
     methods:{
-        handleSelect(key, keyPath) {
-                console.log(key, keyPath);
-        }
+        // 获得div滑块
     }
 }
 </script>
@@ -245,7 +240,6 @@ export default {
                             position: relative;
                             padding-right: 15px;
                             vertical-align: middle; 
-                            
                         }
                             .iconfont {
                                 display: inline-block;
@@ -294,7 +288,7 @@ export default {
                             background-position: -1111px -81px;
                             display: inline-block;
                             background-repeat: no-repeat;
-                            background-image: url(//s1.hdslb.com/bfs/static/jinkela/space/asserts/icons.png);  
+                            background-image: url(../../assets/img/public/icons.png);  
                         }
                             /* 关注 粉丝 */
                     .n-statistics{
@@ -329,8 +323,8 @@ export default {
                             }
                 /*蓝色下划线  */
                 .n-cursor{
-                    margin-left: -5px;
-                    width: 50px;
+                    left: 20px;
+                    width: 55px;
                     background: #00a1d6;
                     height: 3px;
                     position: absolute;
@@ -340,7 +334,6 @@ export default {
         .clearfix{
             width: 1280px;
             margin: 0 auto;
-            border: 1px solid fuchsia;
             margin-top: 14px;
         }
 </style>

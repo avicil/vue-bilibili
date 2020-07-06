@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/Home/Home' //父组件
+import Home from '@/home/Home' //父组件
 import Homepage from '@/home/components/Homepage' //主页
 import Dynamic from '@/home/components/Dynamic' //动态
 import Contribution from '@/home/components/Contribution' //投稿
 import Channel from '@/home/components/Channel' //频道
 import Collection from '@/home/components/Collection' //收藏
+import Login from '@/home/components/Login' //登录
+import Register from '@/home/components/Register' //注册
 
 Vue.use(Router)
 
@@ -62,11 +64,27 @@ export default new Router({
                         title: '主页-收藏'
                     },
                 },
-                {
-                    path: '*', // 错误路由
-                    redirect: '/' //重定向
-                }
             ]
+        },
+        {
+          path: '/login',
+          name:'login',
+          component: Login,
+          meta: {
+            title: '登录'
+          },
+        },
+        {
+          path: '/register',
+          name:'register',
+          component: Register,
+          meta: {
+            title: '注册'
+          },
+        },
+        {
+            path: '*', // 错误路由
+            redirect: '/' //重定向
         }
     ],
 })

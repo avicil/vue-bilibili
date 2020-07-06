@@ -18,7 +18,7 @@ export default {
   components: {
      HomeHeader,
      HomeWrapper 
-  }
+  },
 }
 </script>
 <style scoped>

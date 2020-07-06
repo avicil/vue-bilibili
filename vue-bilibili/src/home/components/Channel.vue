@@ -8,15 +8,16 @@
       <div class="content">
           <div class="content_img">
               <a href="JavaScript:;">
-                  <img src="@/assets/img/Channel_img/img.jpg" alt="加载失败">
-                  <div class="video">
-                  <i class="el-icon-video-play"></i>
-              </div>
+                <img src="@/assets/img/Channel_img/img.jpg" alt="加载失败">
+                <div class="video">
+                    <strong>1</strong>
+                    <i class="iconfont"></i>
+                </div>
               </a>
           </div>
-          <div class="content_item">
-              <p style="color: #222222">学生作品-视频</p>
-              <p style="color:#999999">3-12</p>
+          <div class="channel_meta">
+            <h4 class="channel_name">学生作品-视频</h4>
+            <div class="channel_update_time">3-12</div>
           </div>
       </div>
   </div>
@@ -60,13 +61,14 @@ export default {
             height: 180px;
         }
             .content_img{
-                width: 160px;
-                height: 100px;
+                width: 190px;
+                height: 119px;
                 position: relative;
             }
                 .content_img a img{
-                    width: 160px;
-                    height: 100px;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
                 }
                 .video{
                     position: absolute;
@@ -80,12 +82,45 @@ export default {
                     box-sizing: border-box;
                     background-color: rgba(0,0,0,.6);
                 }
-                .el-icon-video-play{
-                    line-height: 100px;
-                    font-size: 20px;
-                }
-            .content_item{
-                font-size: 12px;
-                margin-top: 5px;
+                    .video strong{
+                        position: relative;
+                        top: 38px;
+                        left: -5px;
+                        font-size: 18px;
+                        color: #fff;
+                        font-weight: 400;
+                        font-family: Arial;
+                    }
+                    .iconfont{
+                        position: relative;
+                        top: 42px;
+                        left: 8px;
+                        background-image: url(//s1.hdslb.com/bfs/static/jinkela/space/asserts/icons.png);
+                        background-repeat: no-repeat;
+                        display: block;
+                        height: 20px;
+                        margin-top: 4px;
+                        background-position: -1223px -151px;
+                    }    
+            .channel_meta{
+                height: 55px;
             }
+                .channel_name{
+                    max-height: 36px;
+                    line-height: 18px;
+                    margin-top: 5px;
+                    color: #222;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                .channel_update_time{
+                    line-height: 14px;
+                    height: 14px;
+                    margin-top: 5px;
+                    color: #999;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    font-size: 12px;
+                }
 </style>

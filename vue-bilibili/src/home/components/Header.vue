@@ -12,7 +12,7 @@
                             </a>
                         </span>
                         <el-dropdown-menu slot="dropdown" class="channel-menu-mini">
-                            <Header-Svgicon></Header-Svgicon>
+                            <Svgicon></Svgicon>
                         </el-dropdown-menu>
                     </el-dropdown>
                 </li>
@@ -91,7 +91,7 @@
                         <el-dropdown-menu slot="dropdown" class="dropdowns">
                             <div class="dropdowns_left">
                                 <el-dropdown-item class="dropdowns_left_div" v-for="item in recommendList" :key="item.id">
-                               <!-- 绑定图片 --><div class="dropdowns_left_div_img"  :style="{backgroundImage:'url(' + item.imgUrl + ')', backgroundRepeat:'no-repeat', backgroundSize: '100% 100%'}"></div> 
+                               <!-- 绑定图片 --><div class="dropdowns_left_div_img"  :style="{backgroundImage:'url(' + item.imgUrl + ')', backgroundRepeat:'no-repeat', backgroundSize: '100% 100%'}"></div>
                                     <div class="dropdowns_left_div_span">{{item.title}}</div>
                                 </el-dropdown-item>
                             </div>
@@ -113,7 +113,7 @@
                             <img src="@/assets/img/Header_img/BW.png" alt="加载失败" class="bnj-gif">
                          </div>
                     </a>
-                   
+
                 </li>
                 <!-- 下载app -->
                 <li class="nav-link-item">
@@ -143,7 +143,7 @@
                         <el-dropdown placement='bottom'>
                             <span class="el-dropdown-link">
                                 <!-- 登录按钮 -->
-                                <router-link to="/" tag="a" >
+                                <router-link to="/login" tag="a" >
                                     <el-avatar   el-avatar src="http://static.hdslb.com/images/akari.jpg" alt="加载失败"></el-avatar>
                                     <span>登录</span>
                                 </router-link>
@@ -155,15 +155,15 @@
                                     <img src="http://static.hdslb.com/images/danmu.png" alt="加载失败" style="left: -109px;" class="img-panels">
                                 </div>
                                 <div class="btn-box">
-                                    <router-link to="/" tag="a" class="btn reg-btn">注册</router-link>
-                                    <router-link to="/" tag="a" class="btn">登录</router-link>
+                                    <router-link to="/register" tag="a" class="btn reg-btn">注册</router-link>
+                                    <router-link to="/login" tag="a" class="btn">登录</router-link>
                                 </div>
                             </el-dropdown-menu>
                         </el-dropdown>
                     </div>
                     <div class="header_right_two_two">
                         <!-- 注册 -->
-                        <router-link to="/" tag="a" >注册</router-link>
+                        <router-link to="/register" tag="a" >注册</router-link>
                     </div>
                 </div>
                 <!-- 投稿 -->
@@ -185,11 +185,11 @@
   </div>
 </template>
 <script>
-import HeaderSvgicon from './Svgicon'
+import Svgicon from './Svgicon'
 export default {
     name: 'Header',
     components:{
-        HeaderSvgicon
+        Svgicon
     },
     data () {
         return {
@@ -438,7 +438,7 @@ export default {
                                     text-shadow: 1px 1px 1px #000;
                                     color: #fff;
                                     background: url(//static.biligame.net/biligametop/img/shadow.png) repeat-x;
-                              } 
+                              }
                         .clearfix_left_brief_item{
                             width: 64px;
                             height: 104px;
@@ -519,9 +519,9 @@ export default {
                                     background: rgba(0,0,0,.5);
                                     font-size: 15px;
                                     color: #fff;
-                                    font-weight: 700;  
-                                    transition: all .2s cubic-bezier(.22,.58,.12,.98); 
-                                }   
+                                    font-weight: 700;
+                                    transition: all .2s cubic-bezier(.22,.58,.12,.98);
+                                }
                                     .lives{
                                         position: absolute;
                                         top: 27px;
@@ -754,7 +754,7 @@ export default {
                         /* css3循环 */
                             .img-panels{
                                 -webkit-animation: 10s rowup linear infinite normal;
-                                animation: 10s panels linear infinite normal;                              
+                                animation: 10s panels linear infinite normal;
                                 }
                                 @keyframes panels{
                                     0% {
