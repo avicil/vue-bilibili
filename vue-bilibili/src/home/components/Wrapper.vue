@@ -74,7 +74,7 @@
                     </div>
                   </div>
               </div>
-              <div class="n-cursor active"></div><!-- //蓝色导航栏下划线 -->
+              <!-- <div class="n-cursor active"></div>//蓝色导航栏下划线 -->
           </div>
       </div>
       <div class="clearfix">
@@ -97,6 +97,9 @@ export default {
 </script>
 
 <style scoped>
+    .router-link-active{
+      border-bottom:3px solid rgb(0, 161, 214);
+    }
     .Wrapper{
         padding: 0px;
         margin: 0px;
@@ -164,7 +167,7 @@ export default {
                             font-weight: 700;
                             line-height: 18px;
                             font-size: 18px;
-                            vertical-align: middle; 
+                            vertical-align: middle;
                         }
                         .level{
                             background-position: -21px -82px;
@@ -174,7 +177,7 @@ export default {
                             margin-right: 5px;
                             vertical-align: middle;
                             background-image: url(../../assets/img/Wrapper_img/lv.png);
-                            background-repeat: no-repeat;  
+                            background-repeat: no-repeat;
                         }
                         .h-sign{
                             margin-top: 10px;
@@ -230,7 +233,7 @@ export default {
                 }
                 /* 主页 动态 投稿 频道 收藏 */
                     .n-tab-links{
-                        display: inline-block;              
+                        display: inline-block;
                     }
                         .n-btn{
                             display: inline-block;
@@ -239,7 +242,7 @@ export default {
                             margin-right: 16px;
                             position: relative;
                             padding-right: 15px;
-                            vertical-align: middle; 
+                            vertical-align: middle;
                         }
                             .iconfont {
                                 display: inline-block;
@@ -264,7 +267,7 @@ export default {
                         position: relative;
                         display: inline-block;
                         width: 100px;
-                        height: 30px;                    
+                        height: 30px;
                     }
                         .space_input{
                             position: absolute;
@@ -288,12 +291,12 @@ export default {
                             background-position: -1111px -81px;
                             display: inline-block;
                             background-repeat: no-repeat;
-                            background-image: url(../../assets/img/public/icons.png);  
+                            background-image: url(../../assets/img/public/icons.png);
                         }
                             /* 关注 粉丝 */
                     .n-statistics{
                         margin-left: 460px;
-                        height: 66px; 
+                        height: 66px;
                     }
                         .n-statistics a{
                             text-decoration: none;
@@ -313,13 +316,13 @@ export default {
                             .n-data-k{
                                 line-height: 14px;
                                 font-size: 12px;
-                                color: #99a2aa; 
+                                color: #99a2aa;
                             }
                             .n-data-v{
                                 line-height: 16px;
                                 margin-top: 5px;
                                 color: #222;
-                                font-size: 12px;   
+                                font-size: 12px;
                             }
                 /*蓝色下划线  */
                 .n-cursor{

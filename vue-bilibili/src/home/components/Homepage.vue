@@ -126,13 +126,13 @@
       <div class="col-2">
           <div class="sections">
               <span class="auth-description">
-                <a href="JavaScript:;" class="auth-icon"></a>      
+                <a href="JavaScript:;" class="auth-icon"></a>
                 bilibili机构认证：茂职计算机系官方账号
               </span>
           </div>
           <div class="sections">
               <h3 class="section-title">公告</h3>
-              <div class="contents">          
+              <div class="contents">
                 =3=进来了不关注一下吗？
               </div>
           </div>
@@ -254,7 +254,7 @@ export default {
                     show: true
                 },
             ],
-            // TA的相簿 
+            // TA的相簿
             AlbumList: [
                 {
                     id: '3P',
@@ -290,17 +290,17 @@ export default {
                 {
                     id:'2',
                     imgUrl: require('@/assets/img/Homepage_Contribution_img/ta_favorites/fav_one.jpg'),
-                    title: '默认收藏',  
+                    title: '默认收藏',
                 },
                 {
                     id:'5',
                     imgUrl: require('@/assets/img/Homepage_Contribution_img/ta_favorites/fav_two.jpg'),
-                    title: '校园',  
+                    title: '校园',
                 },
                 {
                     id:'4',
                     imgUrl: require('@/assets/img/Homepage_Contribution_img/ta_favorites/fav_three.jpg'),
-                    title: '茂名风光',  
+                    title: '茂名风光',
                 },
             ]
         }
@@ -395,7 +395,7 @@ export default {
                     height: 22px;
                     z-index: 5;
                     font-size: 12px;
-                    background: url(../../assets/img/Homepage_Contribution_img/ta_videos/index.png) no-repeat;                       
+                    background: url(../../assets/img/Homepage_Contribution_img/ta_videos/index.png) no-repeat;
                     }
                     /* 文字说明 */
                 .titless{
@@ -706,7 +706,7 @@ export default {
             width: 880px;
             height: 255px;
             position: relative;
-        } 
+        }
             .album{
                 max-height: 400px;
                 overflow: hidden;
@@ -850,7 +850,7 @@ export default {
                     left: -7px;
                     top: -3px;
                     height: 22px;
-                    width: 10px;                   
+                    width: 10px;
                 }
                 .more{
                     background-position: -310px -405px;
@@ -876,7 +876,7 @@ export default {
                     line-height: 18px;
                     vertical-align: middle;
                     margin-left: 10px;
-                    position: relative;   
+                    position: relative;
                 }
                     .be-tab-inner{
                         padding: 0;
